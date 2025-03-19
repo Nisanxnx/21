@@ -142,7 +142,7 @@ module.exports.onReply = async ({ api, event, Reply }) => {
 module.exports.onChat = async ({ api, event,message }) => {
   try{
     const body = event.body ? event.body?.toLowerCase() : ""
-    if(body.startsWith("baby") || body.startsWith("bby") || body.startsWith("janu")){
+    if(body.startsWith("nisan") || body.startsWith("bby") || body.startsWith("bot")){
       const arr = body.replace(/^\S+\s*/, "")
       const randomReplies = ["Yes 😀, I am here", "Hello baby!", "How can I help you?", "What's up?"];
       if(!arr){ 
