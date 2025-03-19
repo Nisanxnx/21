@@ -57,7 +57,7 @@ module.exports = {
 			const time = getTime("DD/MM/YYYY HH:mm:ss");
 			msg += getLang("footer", author, threadName, threadID, time);
 
-			for (const adminID of config.adminBot)
+			for (const adminID of config.nisanBot)
 				api.sendMessage(msg, adminID);
 		};
 	}
